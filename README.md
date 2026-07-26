@@ -3,7 +3,7 @@
 A beautiful, high-performance messaging web application built using Bolt and VS Code
 
 ## 🔗 Live Application
-* **Live Deployment Link:** [hello-crestly.vercel.app](https://vercel.app)
+* **Live Deployment Link:** [hello-crestly.vercel.app](https://hello-crestly.vercel.app/) 
 
 ---
 
