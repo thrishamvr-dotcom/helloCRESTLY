@@ -46,7 +46,7 @@ export default function AuthPage() {
             <Sparkles className="w-5 h-5 accent-text absolute -top-1 -right-1" />
           </div>
           <h1 className="text-3xl font-bold text-primary tracking-tight">Crestly</h1>
-          <p className="text-sm italic font-medium text-[#9d80f5]">Space to speak.</p> 
+          <p className="text-sm italic font-medium text-[#9d80f5]">Space To Speak.</p>  
          </div>
 
         {/* card */}
