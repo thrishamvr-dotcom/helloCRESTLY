@@ -46,8 +46,8 @@ export default function AuthPage() {
             <Sparkles className="w-5 h-5 accent-text absolute -top-1 -right-1" />
           </div>
           <h1 className="text-3xl font-bold text-primary tracking-tight">Crestly</h1>
-          <p className="text-secondary text-sm mt-1.5">Space to speak.</p>
-        </div>
+          <p className="text-sm italic font-medium text-[#9d80f5]">Space to speak.</p> 
+         </div>
 
         {/* card */}
         <div className="glass rounded-3xl p-7 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] animate-scale-in">
@@ -134,33 +134,7 @@ export default function AuthPage() {
               {mode === 'signin' ? 'Sign up' : 'Sign in'}
             </button>
           </p>
-        </div>
-
-        {/* preview accent + theme picker so the look is felt before login */}
-        <div className="glass-card rounded-2xl p-4 mt-5 animate-fade-in">
-          <p className="text-xs text-muted mb-2.5 text-center">Try the theme & accent before you sign in</p>
-          <div className="flex items-center justify-between gap-3">
-            <div className="flex gap-1.5 flex-wrap justify-center">
-              {ACCENT_KEYS.map((key) => (
-                <button
-                  key={key}
-                  type="button"
-                  onClick={() => setAccent(key)}
-                  aria-label={`Accent ${key}`}
-                  className={`w-6 h-6 rounded-full transition-transform ${accent === key ? 'ring-2 ring-offset-2 ring-offset-transparent scale-110' : 'hover:scale-110'}`}
-                  style={{ backgroundColor: ACCENTS[key].dark, boxShadow: accent === key ? `0 0 0 2px ${ACCENTS[key].dark}` : undefined }}
-                />
-              ))}
-            </div>
-            <button
-              type="button"
-              onClick={() => setTheme(settings?.theme === 'dark' ? 'light' : 'dark')}
-              className="px-3 py-2 rounded-lg bg-input text-secondary text-xs font-medium hover:text-primary transition-colors whitespace-nowrap"
-            >
-              {settings?.theme === 'dark' ? 'Light' : 'Dark'} mode
-            </button>
-          </div>
-        </div>
+        </div> 
       </div>
     </div>
   );
